@@ -23,6 +23,13 @@
           }
         }
     </script> 
+    <script>
+      :root {
+        --color-testyellow: #EBE980;
+        --color-testblue: #9DCDEB;
+        --color-testred: #EB7F80;
+      }
+    </script>
 
   </head>
 
@@ -34,7 +41,7 @@
     <div class='snap-y snap-mandatory lg:snap-none h-screen w-screen overflow-scroll object-center dark:lg:bg-gray-950 lg:bg-stone-200'>
       
       <div class='text-balance box-border size-32 p-10 snap-start 
-      bg-amber-200 text-black 
+      bg-[var(--color-testyellow)] text-black 
       dark:lg:bg-gray-950 dark:lg:text-white 
       lg:bg-stone-200 lg:text-black
       lg:w-4/5 lg:mx-auto w-screen h-screen lg:h-auto flex 
@@ -49,7 +56,7 @@
           lg:font-semibold lg:break-normal lg:text-left'>This challenge will take place completely inside the <b>USF REC</b> on <b>Wednesday, April 22nd</b></p>
       </div>
       
-      <div class='text-balance box-border size-32 p-10 snap-start bg-fuchsia-200 text-black lg:text-xl dark:lg:bg-gray-950 lg:bg-stone-200 lg:h-auto lg:w-4/5 dark:lg:text-gray-400 lg:text-gray-600 lg:mx-auto w-screen h-screen flex text-[clamp(2rem,calc(1rem+1vh+1vw),3rem)] flex-col p-10 med:gap-6 gap-3 short:p-4 short:gap-2'>
+      <div class='text-balance box-border size-32 p-10 snap-start bg-[var(--color-testred)] text-black lg:text-xl dark:lg:bg-gray-950 lg:bg-stone-200 lg:h-auto lg:w-4/5 dark:lg:text-gray-400 lg:text-gray-600 lg:mx-auto w-screen h-screen flex text-[clamp(2rem,calc(1rem+1vh+1vw),3rem)] flex-col p-10 med:gap-6 gap-3 short:p-4 short:gap-2'>
         <h2 class='font-semibold py-[0.25em]'>How it works:</h2>
         <ul class='font-light lg:text-xl text-[clamp(1.4rem,calc(0.70rem+1.4vh+.9vw),3rem)] short:text-[clamp(1.3rem,calc(0.65rem+1.3vh+.8vw),2.3rem)] skinny:text-[clamp(0.75rem,calc(0.5rem+1vh+.75vw),1.75rem)]'>
           <li class="lg:text-balance py-[0.25em] short:py-[.125em] relative pl-6 before:absolute before:font-medium before:left-0 before:content-['>']">I have one day, <b>April 22nd</b>, to complete a half ironman marathon. This consists of a 1.2 mile swim, a 56 mile bike, and a 13.1 mile run</li>
@@ -59,7 +66,7 @@
         </ul>
       </div>
       
-      <div class='text-balance box-border size-32 p-10 snap-start bg-cyan-200 text-black dark:lg:bg-gray-950 lg:bg-stone-200 lg:text-xl lg:text-gray-400 lg:text-white lg:h-auto lg:w-4/5 lg:mx-auto w-screen h-screen flex items-center justify-center text-[clamp(2rem,calc(1rem+1vh+1vw),3rem)] flex-col p-10 gap-6'>
+      <div class='text-balance box-border size-32 p-10 snap-start bg-[var(--color-testblue)] text-black dark:lg:bg-gray-950 lg:bg-stone-200 lg:text-xl lg:text-gray-400 lg:text-white lg:h-auto lg:w-4/5 lg:mx-auto w-screen h-screen flex items-center justify-center text-[clamp(2rem,calc(1rem+1vh+1vw),3rem)] flex-col p-10 gap-6'>
         <p class='short:text-[clamp(1.3rem,calc(0.65rem+1.3vh+.8vw),2.3rem)] skinny:text-[clamp(0.75rem,calc(0.5rem+1vh+.75vw),1.75rem)] text-center dark:lg:text-gray-400 lg:text-gray-600 lg:font-semibold'>All donations go 100% to <a href='https://www.unicef.org/' target='_blank' class='cursor-pointer font-semibold text-indigo-400'>UNICEF</a>, a charity focused on providing humanitarian aid to children around the world
         </p>
         <button class='bg-indigo-500 hover:bg-indigo-700 text-white font-semibold text-2xl pr-4 pl-4 pt-1 pb-1'>DONATE</button>
