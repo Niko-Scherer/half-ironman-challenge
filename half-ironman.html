@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Half-Ironman Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          darkMode: 'class',
+          theme: {
+            extend: {
+              screens: {
+                
+                short: { raw: '(max-height: 850px)' },
+                skinny: { raw: '(max-width: 365px)' }
+              }
+            }
+          }
+        }
+    </script> 
+    <style>
+      :root {
+        --color-testyellow: #EBE980;
+        --color-testblue: #9DCDEB;
+        --color-testred: #FF9199;
+      }
+      @media (min-width: 1024px) {
+        h2, p, ul, li {
+          font-size: 2rem !important;
+        }
+        /* Reduce gap between heading and first bullet by pulling ul up half */
+        .how-it-works ul {
+          margin-top: -0.75rem;
+        }
+      }
+    </style>
+
+  </head>
+
+  <body class='font-[Inter]'>
+    <button id="toggle-dark" class="hidden lg:block fixed top-4 right-8 p-2 w-16 text-center dark:bg-stone-200 bg-gray-950 text-gray-400 dark:text-gray-600"></button>
+
+
+
+    <div class='snap-y snap-mandatory lg:snap-none h-screen w-screen overflow-scroll object-center dark:lg:bg-gray-950 lg:bg-stone-200'>
+      
+      <div class='text-balance box-border size-32 p-10 snap-start 
+      bg-[var(--color-testyellow)] text-black 
+      dark:lg:bg-gray-950 dark:lg:text-white 
+      lg:bg-stone-200 lg:text-black lg:pb-0
+      lg:w-4/5 lg:mx-auto w-screen h-screen lg:h-auto flex 
+      lg:text-[clamp(2rem,calc(1rem+1vh+1vw),3rem)] 
+      text-[clamp(1.5rem,calc(.8rem+.8vh+.8vw),2.75rem)]
+      short:text-[clamp(1rem,calc(1rem+1vh+1vw),2rem)] flex-col gap-6 p-10
+       short:p-6 short:gap-4'>
+          <h1 class='lg:text-6xl xl:text-7xl font-semibold lg:pt-[0.6em] lg:font-medium lg:tracking-tighter lg:text-balance text-[clamp(2rem,calc(1rem+1vh+1vw),3rem)] short:text-[clamp(1rem,calc(1rem+1vh+1vw),2rem)] skinny:text-[clamp(0.86rem,calc(0.6rem+1.1vh+.8vw),1.8rem)]'>Half Ironman Challenge</h1>
+          <p class='short:text-[clamp(1.2rem,calc(0.65rem+1.05vh+.7vw),2rem)] 
+          skinny:text-[clamp(0.75rem,calc(0.6rem+1.0vh+.8vw),1.8rem)]
+          dark:lg:text-gray-400 lg:text-gray-600 
+          lg:font-medium font-light lg:text-balance lg:break-normal lg:leading-[1.5]'>Hi, I’m <b>Niko Scherer</b>, a junior at the University of South Florida. I play basketball and hit the gym sometimes, but I’m not a serious athlete.</p>
+          <p class='short:text-[clamp(1.2rem,calc(0.65rem+1.05vh+.7vw),2rem)]  skinny:text-[clamp(0.75rem,calc(0.6rem+1.0vh+.8vw),1.8rem)]
+          dark:lg:text-gray-400 lg:text-gray-600 
+          lg:font-medium font-light lg:text-balance lg:break-normal lg:leading-[1.5]'>A bet with a friend raised a question: <b>could the average person with no training at all wake up one day and complete a Half Ironman triathlon?</b></p>
+        
+          <p class='short:text-[clamp(1.2rem,calc(0.65rem+1.05vh+.7vw),2rem)]  skinny:text-[clamp(0.75rem,calc(0.6rem+1.0vh+.8vw),1.8rem)] 
+          dark:lg:text-gray-400 lg:text-gray-600 
+          lg:font-medium font-light lg:text-balance lg:break-normal lg:leading-[1.5]'>On <b>Thursday, May 8th,</b> I’ll attempt a 1.2-mile swim, 56-mile bike ride, and 13.1-mile run, all in a single day. It's all to raise money for <a href='https://www.unicef.org/' target='_blank' class='cursor-pointer font-semibold text-indigo-600'>UNICEF</a>, a charity providing life-saving aid to children worldwide.</p>
+          
+      </div>
+      
+      <div class='how-it-works text-balance box-border size-32 p-10 lg:pt-0 lg:mt-6 snap-start 
+      bg-[var(--color-testred)] text-black 
+      dark:lg:bg-gray-950 lg:bg-stone-200 
+      lg:h-auto dark:lg:text-gray-400 lg:text-gray-600 
+      lg:mx-auto w-screen h-screen flex
+      flex-col gap-6 lg:w-4/5 lg:h-auto
+      med:gap-6 short:p-6 short:gap-4
+      lg:text-[clamp(2rem,calc(1rem+1vh+1vw),3rem)] 
+      text-[clamp(1.5rem,calc(.8rem+.8vh+.8vw),2.75rem)]
+      short:text-[clamp(1.2rem,calc(0.65rem+1.05vh+.7vw),2rem)]  
+      skinny:text-[clamp(0.75rem,calc(0.55rem+1.0vh+.75vw),1.75rem)]'>
+        <h2 class='font-semibold pt-[0.06em] text-[clamp(1.4rem,calc(0.70rem+1.4vh+.9vw),3rem)]'>How it works:</h2>
+        <ul class='lg:px-6 font-light lg:font-medium lg:text-[clamp(2rem,calc(1rem+1vh+1vw),3rem)] text-[clamp(1.5rem,calc(.8rem+.8vh+.8vw),2.75rem)] lg:leading-[1.5] short:text-[clamp(1.2rem,calc(0.65rem+1.05vh+.7vw),2rem)]  
+        skinny:text-[clamp(0.75rem,calc(0.55rem+1.0vh+.75vw),1.75rem)]'>
+          <li class="lg:text-balance pb-[0.06em] short:py-[.125em] relative pl-6 before:absolute before:font-medium before:left-0 before:content-['>']">You place a pledge to donate, <b>but only if I finish the challenge</b></li>
+          <li class="py-[0.12em] short:py-[.125em] relative pl-6 before:absolute before:font-medium before:left-0 before:content-['>']">If I succeed, your donation goes straight to UNICEF</li>
+          <li class="py-[0.12em] short:py-[.125em] relative pl-6 before:absolute before:font-medium before:left-0 before:content-['>']">If I fail, <b>I’ll refund your donation and match it myself.</b> UNICEF still gets the money—you’re just betting on whether I can actually pull this off</li>
+        </ul>
+        
+        <p class='short:text-[clamp(1.2rem,calc(0.65rem+1.05vh+.7vw),2rem) lg:text-[clamp(2rem,calc(1rem+1vh+1vw),3rem)] text-[clamp(1.5rem,calc(.8rem+.8vh+.8vw),2.75rem)]] 
+        skinny:text-[clamp(0.75rem,calc(0.55rem+1.0vh+.75vw),1.75rem)]
+          dark:lg:text-gray-400 lg:text-gray-600 
+          lg:font-medium font-light lg:break-normal lg:leading-[1.5]'>The challenge starts at <b>USF’s REC Gym</b> with the swim, followed by the bike and run at <b>Flatwoods Park</b>, a nearby trail in Tampa.</p>
+        
+        <p class='short:text-[clamp(1.2rem,calc(0.65rem+1.05vh+.7vw),2rem) lg:text-[clamp(2rem,calc(1rem+1vh+1vw),3rem)] text-[clamp(1.5rem,calc(.8rem+.8vh+.8vw),2.75rem)]] 
+        skinny:text-[clamp(0.75rem,calc(0.55rem+1.0vh+.75vw),1.75rem)]
+          dark:lg:text-gray-400 lg:text-gray-600 
+          lg:font-medium font-light lg:break-normal lg:leading-[1.5]'>Follow along live on Instagram <a href='https://www.instagram.com/nikolas.scherer?igsh=MXZsOTRwNG1jNXV3cQ%3D%3D&utm_source=qr' target='_blank' class='cursor-pointer font-semibold text-indigo-600'>@nikolas.scherer</a>, or check back here for the results.</p>
+        
+      </div>
+      
+      <div class='text-balance box-border size-32 snap-start bg-[var(--color-testblue)] text-black dark:lg:bg-gray-950 lg:bg-stone-200 dark:lg:text-gray-400 lg:text-gray-600 lg:h-auto lg:w-4/5 lg:mx-auto w-screen h-screen flex items-center justify-center text-[clamp(2rem,calc(1rem+1vh+1vw),3rem)] flex-col p-10 gap-6'>
+        <p class='short:text-[clamp(1.2rem,calc(0.65rem+1.05vh+.7vw),2rem) skinny:text-[clamp(0.75rem,calc(0.6rem+1.0vh+.8vw),1.8rem)] text-center lg:leading-[1.5]'><b>All donations go 100% to <a href='https://www.unicef.org/' target='_blank' class="cursor-pointer font-semibold text-indigo-600">UNICEF</a>, please consider donating. Amount raised so far:</b> <a class="cursor-pointer font-semibold text-indigo-600">$0</a>
+        </p>
+
+        
+        <script async
+          src="https://js.stripe.com/v3/buy-button.js">
+        </script>
+
+        <stripe-buy-button
+          buy-button-id="buy_btn_1RJcMOFDyGEf64c0OxXGcnSB"
+          publishable-key="pk_live_51RJbYXFDyGEf64c0xmsLtG9Plsbez0OfJww5iWLgyiqTV6qnVLVyh7iMqDLtF4V1mIFllI9xENaOTx2WGPDHvt1900GXal9GFa"
+        >
+        </stripe-buy-button>
+      </div>
+    </div>
+
+    <script>
+      const toggleButton = document.getElementById('toggle-dark');
+
+      function updateButtonText() {
+        if (document.documentElement.classList.contains('dark')) {
+          toggleButton.textContent = 'LIGHT'; // In dark mode, show "Light"
+        } else {
+          toggleButton.textContent = 'DARK'; // In light mode, show "Dark"
+        }
+      }
+
+      // Toggle dark mode and update text on click
+      toggleButton.addEventListener('click', function () {
+        document.documentElement.classList.toggle('dark');
+        updateButtonText();
+      });
+
+      // Set the initial button text on page load
+      updateButtonText();
+    </script>
+
+  </body>
+</html>
